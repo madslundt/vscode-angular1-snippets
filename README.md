@@ -2,8 +2,6 @@
 
 This extension for Visual Studio Code adds snippets for Angular 1 for JavaScript and TypeScript.
 
-![Use Extension](images/use-extension.gif)
-
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
@@ -25,5 +23,3 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 4. Select `Install Extension`
 5. Choose the extension
 6. Reload Visual Studio Code
-
-![Install Extension](images/install-extension.gif)
