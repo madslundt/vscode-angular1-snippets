@@ -2,45 +2,35 @@
 	"Angular Controller": {
 		"prefix": "ng1controller",
 		"body": [
-			"namespace ${module} {",
+			"module ${module}.Controllers {",
 			"\t'use strict';",
 			"",
-			"\texport class ${Controller}Controller {",
+			"\texport class ${module}Ctrl {",
 			"\t\tstatic $inject: Array<string> = ['${dependency1}'];",
-			"\t\tconstructor(private ${dependency1}: ${dependency1Type}) {}",
+			"\t\tconstructor(private ${module}Service: ${module}.Services.${module}Service) {}",
 			"",
 			"\t}",
-			"",
-			"\tangular",
-			"\t\t.module('${Module}')",
-			"\t\t.controller('${Controller}Controller', ${Controller}Controller);",
 			"}"
 		]
 	},
 	"Angular Service": {
 		"prefix": "ng1service",
 		"body": [
-			"namespace ${module} {",
+			"module ${module}.Services {",
 			"\t'use strict';",
 			"",
-			"\texport interface I${Service} {",
-			"\t}",
-			"\texport class ${Service} implements I${Service} {",
+			"\texport class ${module}Service implements ${module}.Interfaces.I${Service} {",
 			"\t\tstatic $inject: Array<string> = ['${dependency1}'];",
 			"\t\tconstructor(private ${dependency1}: ${dependency1Type}) {}",
 			"",
 			"\t}",
-			"",
-			"\tangular",
-			"\t\t.module('${Module}')",
-			"\t\t.service('${Service}', ${Service});",
 			"}"
 		]
 	},
 	"Angular Module": {
 		"prefix": "ng1module",
 		"body": [
-			"namespace ${module} {",
+			"module ${module} {",
 			"\t'use strict';",
 			"",
 			"\tangular.module('${module}', [",
@@ -48,5 +38,28 @@
 			"\t]);",
 			"}"
 		]
+	}
+	"Angular Component": {
+		"prefix": "ng1component",
+		"body": [
+			"module ${module} {",
+			"\t'use strict';",
+			"",
+			"\tangular.module('${domain}.${component}', [",
+			"\t\t$0",
+			"\t])",
+			"",
+			"\t.service('${module}Service', ${module}.Services.${module}Service)",
+			"\t.component('${component}', {",
+			"\t\tbindings: {"
+			"\t\t\t$0",
+			"\t\t},",
+			"\t\tcontroller: ${module}.Controllers.${module}Ctrl,",
+			"\t\tcontrollerAs: 'vm'",
+			"\t\ttemplateUrl: 'app/${component}/${component}.template.html",
+			"\t}",
+			"}"
+		]
+	}
 	}
 }
