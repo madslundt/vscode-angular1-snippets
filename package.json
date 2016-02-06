@@ -1,6 +1,6 @@
 {
     "name": "Angular1",
-    "publisher": "johnpapa",
+    "publisher": "madslundt FORK: johnpapa",
     "displayName": "Angular 1 JavaScript and TypeScript Snippets",
     "description": "Angular 1 JavaScript and TypeScript snippets",
     "icon": "images/angular-shield.png",
@@ -11,7 +11,7 @@
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/johnpapa/vscode-angular1-snippets.git"
+        "url": "https://github.com/madslundt/vscode-angular1-snippets.git"
     },
     "version": "0.1.15",
     "engines": { "vscode": "0.10.x" },
