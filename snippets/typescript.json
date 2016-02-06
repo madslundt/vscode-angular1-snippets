@@ -38,7 +38,7 @@
 			"\t]);",
 			"}"
 		]
-	}
+	},
 	"Angular Component": {
 		"prefix": "ng1component",
 		"body": [
