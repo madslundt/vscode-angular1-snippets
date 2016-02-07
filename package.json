@@ -1,6 +1,6 @@
 {
-    "name": "Angular1.5",
-    "publisher": "madslundt FORK: johnpapa",
+    "name": "Angular1",
+    "publisher": "madslundt",
     "displayName": "Angular +1.5 TypeScript Snippets",
     "description": "Angular +1.5 TypeScript snippets",
     "icon": "images/angular-shield.png",
