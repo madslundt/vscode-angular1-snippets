@@ -19,7 +19,7 @@
 			"module ${module}.Services {",
 			"\t'use strict';",
 			"",
-			"\texport class ${module}Service implements ${module}.Interfaces.I${Service} {",
+			"\texport class ${module}Service implements ${module}.Interfaces.I${module} {",
 			"\t\tstatic $inject: Array<string> = ['${dependency1}'];",
 			"\t\tconstructor(private ${dependency1}: ${dependency1Type}) {}",
 			"",
