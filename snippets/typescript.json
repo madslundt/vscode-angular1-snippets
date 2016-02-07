@@ -52,12 +52,12 @@
 			"\t.service('${module}Service', ${module}.Services.${module}Service)",
 			"\t.component('${component}', {",
 			"\t\tbindings: {"
-			"\t\t\t$0",
+			"\t\t\t$1",
 			"\t\t},",
 			"\t\tcontroller: ${module}.Controllers.${module}Ctrl,",
-			"\t\tcontrollerAs: 'vm'",
-			"\t\ttemplateUrl: 'app/${component}/${component}.template.html",
-			"\t}",
+			"\t\tcontrollerAs: 'vm',",
+			"\t\ttemplateUrl: 'app/${component}/${component}.template.html'",
+			"\t});",
 			"}"
 		]
 	}

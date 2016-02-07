@@ -1,8 +1,8 @@
 {
-    "name": "Angular1",
+    "name": "Angular1.5",
     "publisher": "madslundt FORK: johnpapa",
-    "displayName": "Angular 1 JavaScript and TypeScript Snippets",
-    "description": "Angular 1 JavaScript and TypeScript snippets",
+    "displayName": "Angular +1.5 TypeScript Snippets",
+    "description": "Angular +1.5 TypeScript snippets",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
         "color": "#0273D4",
@@ -18,10 +18,6 @@
     "categories": ["Snippets"],
     "contributes": {
         "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript.json"
-            },
             {
                 "language": "typescript",
                 "path": "./snippets/typescript.json"
