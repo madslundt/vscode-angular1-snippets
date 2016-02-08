@@ -2,11 +2,12 @@
 	"Angular Controller": {
 		"prefix": "ng1controller",
 		"body": [
+			"/// <reference path=\"../../typings/myReferences.d.ts\" />",
 			"module ${module}.Controllers {",
 			"\t'use strict';",
 			"",
 			"\texport class ${module}Ctrl {",
-			"\t\tstatic $inject: Array<string> = ['${dependency1}'];",
+			"\t\tstatic $inject: Array<string> = ['${module}Service'];",
 			"\t\tconstructor(private ${module}Service: ${module}.Services.${module}Service) {}",
 			"",
 			"\t}",
@@ -16,6 +17,7 @@
 	"Angular Service": {
 		"prefix": "ng1service",
 		"body": [
+			"/// <reference path=\"../../typings/myReferences.d.ts\" />",
 			"module ${module}.Services {",
 			"\t'use strict';",
 			"",
@@ -30,10 +32,12 @@
 	"Angular Module": {
 		"prefix": "ng1module",
 		"body": [
+			"/// <reference path=\"../../typings/myReferences.d.ts\" />",
 			"module ${module} {",
 			"\t'use strict';",
 			"",
-			"\tangular.module('${module}', [",
+			"\tangular",
+			"\t.module('${domain}', [",
 			"\t\t$0",
 			"\t]);",
 			"}"
@@ -42,6 +46,7 @@
 	"Angular Component": {
 		"prefix": "ng1component",
 		"body": [
+			"/// <reference path=\"../../typings/myReferences.d.ts\" />",
 			"module ${module} {",
 			"\t'use strict';",
 			"",
@@ -60,5 +65,15 @@
 			"\t});",
 			"}"
 		]
-	}
+	},
+	"Typescript Interface": {
+		"prefix": "ng1interface",
+		"body": [
+			"module ${module}.Interfaces {",
+			"\texport interface I${interface} {",
+			"\t\t$0",
+			"\t}"
+			"}"
+		]
+	},
 }
